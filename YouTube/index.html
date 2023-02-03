@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <title>YouTube</title>
+    <link rel="icon" type="image/x-icon" href="./assets/premium.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!------------HEADER SEARCH BAR------------>
+    <div class="content">
+        <div class="first-element-navbar">
+            <button class="hamburger" onclick="toggleNav()">&#9776</button>
+        </div>
+        <div class="uspipeLogo">
+            <a class="uspipeLogo-name" href="https://Youtube.com">
+            <img src="./assets/Screenshot from 2023-02-01 12-11-37.png">YouTube</a>
+        </div>
+        <div class="search-bar">
+            <form action="" method="post">
+                <button id="searchIcon" class="search-button1" type="submit" value="buttonIcon"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                <input id="search" onclick="showMeIcon()" class="search-bar-in" type="text" placeholder="Search">
+                <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></button>
+                <button class="voice-button" type="submit"><i class="fa-solid fa-microphone" style="color: white;"></i></button>
+            </form>
+        </div>
+        <div class="threeDot">
+            <button class="threeDotButton">&#8942</button>
+        </div>
+        <div class="signUpButton">
+            <button class="inSignUpButton"><a class="personSignUp">&#128100</a>SIGN IN</button>
+        </div>
+    </div>
+    <!------------SIDE NAVIGATOR------------>
+    <div class="mainContent">
+        <div id="main">
+        <div id="mySidenav" class="sidenav">
+            <a href="#" class="navpad"><img class="navImg" src="./assets/home.png">Home</a>
+            <a href="#" class="navpad"><img class="navImg" src="./assets/Screenshot from 2023-02-01 16-29-14.png">Shorts</a>
+            <a href="#" class="navpad"><img class="navImg" src="./assets/subs.png">Subscription</a>
+            <hr>
+            <a href="#" class="navpad"><img class="navImg" src="./assets/library.png">Library</a>
+            <a href="#" class="navpad"><img class="navImg" src="./assets/history1.png">History</a>
+            <hr>
+            <p class="insideNav">Sign in to like Videos,
+                comment, and subscribe.
+            </p>
+            <div class="signUpButton2">
+                <button class="inSignUpButton2">&#128100;SIGN IN</button>
+            </div>
+            <hr>
+            <div class="visibility">
+                <p class="explore">EXPLORE</p>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/trending.png">Trending</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/music.png">Music</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/movies.png">Movies</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/gaming.png">Gaming</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/news.png">News</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/sports.png">Sports</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/fashion.png">Fashion and Beauty</a>
+                <hr>
+                <a href="#"><img class="navImg1" src="./assets/browse.png">Browse Channel</a>
+                <hr>
+                <p class="explore">MORE FROM YOUTUBE</p>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/premium.png">YouTube Premium</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/yumusic.png">YouTube Music</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/kids.png">YouTube Kids</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/yutv.png">Youtube TV</a>
+                <hr>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/settings.png">Settings</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/Report.png">Report history</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/help.png">Help</a>
+                <a href="#" class="navpad"><img class="navImg1" src="./assets/send.png">Send feedback</a>
+                <hr>
+                <p class="footerNav">About Press Copyright<br>Contact us Creators<br>Advertise Developers</p>
+                <p class="footerNav">Terms Privacy Policy & Safety<br> How YouTube works<br>Test new features</p>
+                <p class="copy">&copy; Google LLC</p>
+            </div>
+         </div>
+        </div>
+        <div class="sidebar">
+            <div class="infoSide">
+                <a href="#home"><img class="navImg1" src="./assets/home.png"></a>
+                <a class="text" href="">Home</a>
+            </div>
+            <div class="infoSide">
+                <a href="#services"><img class="navImg1" src="./assets/Screenshot from 2023-02-01 16-29-14.png"></a>
+                <a class="text" href="">Shorts</a>
+            </div>
+            <div class="infoSide">
+                <a href="#clients"><img class="navImg1" src="./assets/subs.png"></a>
+                <a class="text" href="">Subscription</a>
+            </div>
+            <div class="infoSide">
+                <a href="#contact"><img class="navImg1" src="./assets/library.png"></a>
+                <a class="text" href="">Library</a>
+            </div>
+            <div class="infoSide">
+                <a href="#history"><img class="navImg1" src="./assets/history1.png"></a>
+                <a class="text" href="">History</a>
+            </div>
+          </div>
+    </div>
+    <!-------------------------------------------------CHIPS-------------------------------------------->
+        <div class="vidContent">
+            <div class="chipContent">
+                <div class="chips">
+                    <a href="">All</a>
+                    <span class="chipsToolTip">All</span>
+                </div>
+                <div class="chips">
+                    <a href="">Recent</a>
+                    <span class="chipsToolTip">Recent</span>
+                </div>
+                <div class="chips">
+                    <a href="">Music</a>
+                    <span class="chipsToolTip">Music</span>
+                </div>
+                <div class="chips">
+                    <a href="">Gaming</a>
+                    <span class="chipsToolTip">Gaming</span>
+                </div>
+                <div class="chips">
+                    <a href="">Playlist</a>
+                    <span class="chipsToolTip">Playlist</span>
+                </div>
+                <div class="chips">
+                    <a href="">Live</a>
+                    <span class="chipsToolTip">Live</span>
+                </div>
+                <div class="chips">
+                    <a href="">Background Music</a>
+                    <span class="chipsToolTip">Background Music</span>
+                </div>
+                <div class="chips">
+                    <a href="">Coldplay</a>
+                    <span class="chipsToolTip">Coldplay</span>
+                </div>
+                <div class="chips">
+                    <a href="">DJ mix</a>
+                    <span class="chipsToolTip">DJ mix</span>
+                </div>
+                <div class="chips">
+                    <a href="">Mixes</a>
+                    <span class="chipsToolTip">Mixes</span>
+                </div>
+                <div class="chips">
+                    <a href="">Pop Rock</a>
+                    <span class="chipsToolTip">Pop Rock</span>
+                </div>
+                <div class="chips">
+                    <a href="">Soft rock</a>
+                    <span class="chipsToolTip">Soft rock</span>
+                </div>
+                <div class="chips">
+                    <a href="">Country Music</a>
+                    <span class="chipsToolTip">Country Music</span>
+                </div>
+                <div class="chips">
+                    <a href="">Lo-fi</a>
+                    <span class="chipsToolTip">Lo-fi</span>
+                </div>
+                <div class="chips">
+                    <a href="">Dance pop</a>
+                    <span class="chipsToolTip">Dance pop</span>
+                </div>
+                <div class="chips">
+                    <a href="">Comedy</a>
+                    <span class="chipsToolTip">Comedy</span>
+                </div>
+                <div class="chips">
+                    <a href="">Baby</a>
+                    <span class="chipsToolTip">Baby</span>
+                </div>
+                <div class="chips">
+                    <a href="">Adult</a>
+                    <span class="chipsToolTip">Adult</span>
+                </div>
+                <div class="chips">
+                    <a href="">Kids</a>
+                    <span class="chipsToolTip">Kids</span>
+                </div>
+            </div>
+        </div>
+        <!-------------------------------------------YOUTUBE CONTENT----------------------------------------->
+        <div class="wholeContent">
+            <div class="videoDivOne">
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video1">
+                            <img src="./assets/1.webp" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="./assets/user1_profile.jpg" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Building DIY DEATH WHISTLE</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Nicolas Bras<br>1M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="./assets/2.webp" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="./assets/user2_profile.jpg" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Building DIY DEATH WHISTLE</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Nicolas Bras<br>1M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+
+                        <div class="video1">
+                            <img src="./assets/3.webp" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="./assets/user3_profile.jpg" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Building DIY DEATH WHISTLE</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Nicolas Bras<br>1M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="./assets/4.webp" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="./assets/user4_profile.jpg" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Building DIY DEATH WHISTLE</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Nicolas Bras<br>1M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="videoDivTwo">
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video1">
+                            <img src="./assets/17.webp" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="./assets/user6_profile.jpg" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Baby Tate -hey, Mickey!(Lyrics)</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Nicolas Bras<br>1M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="./assets/18.webp" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="./assets/user7_profile.jpg" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Building DIY DEATH WHISTLE</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Nicolas Bras<br>1M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/u9VdlM01HZY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCkjxEdqg1RWQVAIeUuMnV71b7bMg" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/g083wpJ8yJ9YaYDmI-xK_xPiMtQKVssUzS9MkPasj7hp4KvAO_TXr7MHhYQzOfv0XOyhoLXIZA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>LAKERS at PACERS | FULL GAME</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>NBA <br> 132k views &#x2022; 53 mins ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/CG__N4SS1Fc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBi98gxuTQYjuKoKSuKaPf9Z5piWg" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJUvyoz58-Shq477iC8w1Q0zl8Cp10Zmuo6Gw9YUrA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Front-end dev reacts to amazing CSS</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Kevin Powell<br>1.4M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 4px; margin-right: 60px; margin-left: 150px;">
+            <div class="videoDivThree">
+                <div class="shortTag">
+                    <img src="./assets/shorts.png">
+                    <h3>Shorts</h3>
+                </div>
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video2">
+                            <img src="./assets/7.webp" alt="">
+                            <div class="inVideo">
+                                <div class="inDesc">
+                                    <h1>God Tier HTML <br>Programming</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc3">
+                                <p>1M views</p>
+                            </div>
+                        </div>
+    
+                        <div class="video2">
+                            <img src="./assets/8.webp" alt="">
+                            <div class="inVideo">
+                                <div class="inDesc">
+                                    <h1>Jennifer Lawrence</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc3">
+                                <p>16M views</p>
+                            </div>
+                        </div>
+    
+                        <div class="video2">
+                            <img src="./assets/9.webp" alt="">
+                            <div class="inVideo">
+                                <div class="inDesc">
+                                    <h1>How Old Is The <br> Water You Drink?</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc3">
+                                <p>2.1M views</p>
+                            </div>
+                        </div>
+    
+                        <div class="video2">
+                            <img src="./assets/10.webp" alt="">
+                            <div class="inVideo">
+                                <div class="inDesc">
+                                    <h1>This Dog Deserves <br> an Oscar</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc3">
+                                <p>11M views</p>
+                            </div>
+                        </div>
+    
+                        <div class="video2">
+                            <img src="./assets/11.webp" alt="">
+                            <div class="inVideo">
+                                <div class="inDesc">
+                                    <h1>Do you have your <br> Earpuds ready?</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc3">
+                                <p>1M views</p>
+                            </div>
+                        </div>
+    
+                        <div class="video2">
+                            <img src="./assets/12.webp" alt="">
+                            <div class="inVideo">
+                                <div class="inDesc">
+                                    <h1>How Asian Parents<br>Clean your Room</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc3">
+                                <p>Nicolas Bras<br>1M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video2">
+                            <img src="./assets/13.webp" alt="">
+                            <div class="inVideo">
+                                <div class="inDesc">
+                                    <h1>Cat After recharging <br>#cards #shorts</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc3">
+                                <p>1.2M views</p>
+                            </div>
+                        </div>
+    
+                        <div class="video2">
+                            <img src="./assets/14.webp" alt="">
+                            <div class="inVideo">
+                                <div class="inDesc">
+                                    <h1>Mr Green Finding <br>His brother</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc3">
+                                <p>77M views</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="height: 4px; margin-right: 60px; margin-left: 150px;">
+            <div class="videoDivTwo">
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/TJ2ifmkGGus/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBOIFL19TOIRT8ZKzVZObpftDSckA" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJV-BviaWnNvLLWoK18JTaIs6IC6adCul_JzqgQtkA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>1,000 blind people see for the first time</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Mr. Beast<br>78M views &#x2022; 5 days ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/YpGjaJ1ettI/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAx95bizFu4fxePN4qbMdKIoNDCug" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/uci2aPM5XOEgdMt2h9aHMiN-K1-TmJQQPRdWvprNrpJpyZSLI9z0zFzyXQeQ1mNIQWl2QrjX3Rc=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>[Working BGM] Comfortable Music</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Daily Routine<br>6.7M views &#x2022; 6 months ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/EgTuva-LMCE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDz8n3VF7OGpM4OBFRSyFlFHVBflA" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJX8weHX00DvkPp44CeYKZd9f65juByIMeq6DNEOyQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Subway Surfers but RTX ON (4k)</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>12th Hour<br>6.7M views &#x2022; 1 month ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/A74TOX803D0/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDnyOv6ZOd-wbe5aOz5SMVhTH3tkQ" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJXPR4dSz0wwP-elkeiWUMnfZlCtNZP8Rd-tmFOZYg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Java Programming for beginners/h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>FreeCodeCamp.org<br>1M views &#x2022; 4 months ago </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="videoDivTwo">
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/HD13eq_Pmp8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7b5gMu2gYMypNKT5x0b1jIdngDg" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJXev2NIsDYSbxtF7rhC4IaUr8B6MiGw1B5plnmPug=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>HTML FUll Course(FREE)</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Bro Code<br>375k views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/DLn3jOsNRVE/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5jRMJSxmHXd6NwJZAOaXTPtzhYA" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJUwJSD45ADCwBAlVTlX4IYjb6FtlQKou8FAxcU_Sg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>5 Mini Python Projects - for Beginners</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Tech With Tim<br>1.6M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/a_iQb1lnAEQ/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCsvftpCvVFB4XMJpZZ-uKzi5Ts-Q" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJXPR4dSz0wwP-elkeiWUMnfZlCtNZP8Rd-tmFOZYg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Learn HTML & CSS</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>freeCodeCamp<br>225k views &#x2022; 4 months ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/VRrEquQfh88/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAEnvkuh_kVYFae0n6zFWxjbp0jfQ" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJWYwUUkh5fBQfupkRbR8EGIpd01BNVo_DkR16UW=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>How to make responsive Navigator</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Tahmid Ahmed<br>56k views &#x2022; 3 months ago </p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <div class="videoDivTwo">
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/dnJUE2ptB5U/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBYMJMoy8Lyx1Hj9M-3Ar2ijZO63Q" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/LQ7DB3MRLuUm5xTtaNgSfRviCXkXlw2V3ke2mqw25WPhB1wjf2aQfkkMv0cf3Fp7709D7kwq=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>I made a Game in one line of code</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>n8dev<br>2M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/l5t9IXtTr6g/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC8-Kr4vmDiTC5S4t9yYSH6-_-cQw" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/BWfYASvuJQqy1ecK191XIs9pwGxc8fqLt9rJorAG7UKDx0IsYPK3506bGTJDKijonLwA57u-MZ4=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Creep - Radiohead(Lyrics)</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Chill With Me<br>5M views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/JhOU3FOyApM/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA80-My4B10pfkvZQaUgfK-HYleBw" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/OTeVrhBf3byA2ofSUO1vbhzbB0XAmBpm6Rgm85xO6OUVmW3PoPQ0Siy5UJbuRJC16PGImImvm34=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Why is Our Skeleton on the inside</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Be Smart<br>4.4M views &#x2022; 2 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/phWxA89Dy94/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAL594xnzDxBMGe2ktZoTr_uJVnkQ" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/rn6FdUja6V224On4xyuSgcUrQyTPAHaUBA3MQmLr-ChvxSGeCmdGTvkZvJXjvgO-uZc1cxqS=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Learn Flexbox CSS in 8 minutes</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Staying The Dragon<br>212k views &#x2022; 2 months ago </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="videoDivTwo">
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/XvsopmnMfg8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDcAr3iDuefsBawZzmwql6rZ4kKWQ" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJUHqmaBkDsFpQ01V22jzPkovaPCyxzdHdpkS_-4tA=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Idioms</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Domics<br>7.7M views &#x2022; 3 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/vm-ILxZTlSI/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAsQFigIMCAAQARhaIFooWjAP&rs=AOn4CLAA0zw6sj_LR6l1QLcrp0XBxkOutw" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/_nVYJ6iFCgH41efl6bMIm_1gI6ESumihi09QgTM4LwUChpwukOpfPV8qcCzwFosGj9CdeuN2hQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Set Fire To The Rain x Another Love</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Ibrahamic Music<br>1.1M views &#x2022; 3 weeks ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/sTeoEFzVNSc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAGr0V2eRDfJQ730GYMWjYQAzbs6g" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/tBEPr-zTNXEeae7VZKSZYfiy6azzs9OHowq5ZvogJeHoVtKtEw2PXSwzMBKVR7W0MI7gyND8=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>ChatGPT Tutorial for Developers</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Programming with Mosh<br>1.3M views &#x2022; 2 weeks ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/SgmNxE9lWcY/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBez9dDHfxxVdF6mIwfz06Al7ZWFQ" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/rn6FdUja6V224On4xyuSgcUrQyTPAHaUBA3MQmLr-ChvxSGeCmdGTvkZvJXjvgO-uZc1cxqS=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Learn CSS Animations In 20 Minutes</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Slaying The Dragons<br>83k views &#x2022; 2 months ago </p>
+                            </div>
+                        </div>
+    
+
+                    </div>
+                </div>
+            </div>
+            <div class="videoDivTwo">
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/J5GWyiWU2H8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLAQCU9wNWwh83Y1vMa6fNEwgz9ryQ" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJWj6jm3d6v0ReH6IZK_65fZ0heekenIZXPWQGVCDg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>CSS Grid Tutorial #4 - Grid Lines</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>The Net Ninja<br>95k views &#x2022; 5 years ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/-L1sne5b9cw/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBssOy8feAuJtOUaehJzhXisDc4tA" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/NpF0TRBv03ncfmEH7_IiXsOfW7CuiBapl8IvkAv8IjrOYfa4QmfZk0ikskOz_WqitrDOFbDEAQ=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Rihanna Lift Me Up (lyrics)</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Vibe Music Lyrics<br>208 views &#x2022; 6 hours ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/n4R2E7O-Ngo/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDSMtS08KvGY9CysqV8MrNP6Zye0Q" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJXtuktEGarPtsDfBBlRuEsXFSEreRnyz4eYchGQ1w=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>CSS Full Course for beginners</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Dave Grey<br>244k views &#x2022; 6 months ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/RlC1bawrcbk/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCuBhkC_yGsL4Wrh5HG9HVlHEzzPg" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJXhByudBkILep_wLI1_o8NwteHaqSetwtAqWdVNFw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>How to Make Modern Website</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Easy Tutorials<br>411k views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+
+                    </div>
+                </div>
+            </div>
+            <div class="videoDivTwo">
+                <div class="videoInside">
+                    <div class="contentInside">
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/HD13eq_Pmp8/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB7b5gMu2gYMypNKT5x0b1jIdngDg" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJXev2NIsDYSbxtF7rhC4IaUr8B6MiGw1B5plnmPug=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>HTML Full Course(FREE)</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Bro Code<br>375k views &#x2022; 1 year ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/1Rs2ND1ryYc/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDCEhBJOuSZooep7mbF4mBmkVDZAg" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/ytc/AL5GRJXPR4dSz0wwP-elkeiWUMnfZlCtNZP8Rd-tmFOZYg=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>CSS Tutorial - Zero to Hero/h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>freeCodeCamp.org<br>2.9m views &#x2022; 3 years ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/D4jj3HHrnSU/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBjEFqs7-JahCzYGdl1JFw0yN_Fcw" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/Ke92UnVj16cz7yw1qzRC7WxqJdC3vOEhq3q5SX5SetrdM8nKqRuyu3akHsX3haCYf0Ng73ld=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Make your first HTML form</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>Code and Coins<br>3M views &#x2022; 6 years ago </p>
+                            </div>
+                        </div>
+    
+                        <div class="video1">
+                            <img src="https://i.ytimg.com/vi/zyF-bgedaVA/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLB5L237XW88OQnH3XxxS4cr8aOA-g" alt="">
+                            <div class="inVideo">
+                                <div class="description">
+                                    <img src="https://yt3.ggpht.com/cdF85l11-FZ4JzviCqDi5stkd3AQ8pYTqZcQnzOAtmWk_8yy993MDdc0RGtp2TOG7E8ilbLcaw=s68-c-k-c0x00ffffff-no-rj" alt="">
+                                    <span class="video1text">Keep Hovering to play</span>
+                                </div>
+                                <div class="inDesc">
+                                    <h1>Flowers -Mily Cyrus (Lyrics)</h1>
+                                </div>
+                            </div>
+                            <div class="inDesc2">
+                                <p>La Lola<br>372k views &#x2022; 6 months ago </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="./js.js"></script>
+</body>
+</html>

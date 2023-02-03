@@ -1,0 +1,535 @@
+body{
+    background-color: #0F0F0F;
+    font-family:'Roboto, Arial, sans-serif';
+    overflow-x: hidden;
+}
+
+.content{
+    display: flex;
+    justify-content: left ;
+    align-items: center;
+    background-color: #212121fa;
+    margin-top: 8px;
+    margin-left: -8px;
+    margin-top: -20px;
+    padding-left: 10px;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+
+.hamburger{
+    font-size: 22px;
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    background: transparent;
+    border-style: none;
+}
+
+.uspipeLogo{
+    margin-left: 20px;
+}
+.uspipeLogo-name{
+    display:inline-flex;
+    text-decoration: none;
+    font-size: 27px;
+    margin-left: -10px;
+    text-align: center;
+    font-weight:700;
+    font-size: 35px;
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.search-bar{
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 80px;
+    
+}
+
+.search-bar-in{
+    border-radius: 50px 0px 0px 50px;
+    padding: 8px;
+    background-color: #121212;
+    width: 525px;
+    height: 25px;
+    border-style: none;
+    font-size: 20px;
+    outline: none;
+    color: white;
+}
+.search-bar-in:focus{
+    border: 1px solid #3A99EB;
+    border-top: 2px solid #3A99EB;
+    border-left-style: none;
+    border-radius: 0px;
+}
+
+.search-button{
+    background-color: #323232;
+    border-style: none;
+    margin-left: -3px;
+    border-radius: 0px 50px 50px 0px;
+    padding-right: 18px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.search-button1{
+    background-color: #121212;
+    border: 0.1px soild;
+    border-color: #3A99EB;
+    border-right-style: none;
+    font-size: 20px;
+    padding-right: 18px;
+    padding-top: 9px;
+    margin-right: -13px;
+    padding-bottom: 8.1px;
+    justify-self: center;
+    padding-left: 10px;
+    border-radius: 50px 0px 0px 50px;
+    justify-content: center;
+    position:relative;
+
+}
+
+button[value="buttonIcon"]{
+    display: none;
+}
+
+.voice-button{
+    justify-content: center;
+    border-radius: 100%;
+    height: 40px;
+    width: 40px;
+    background-color: #323232;
+    border-top-style: none;
+    border-left-style: none;
+    font-size: 15px;
+    margin-left: 50px;
+    border-style: none;
+    position: relative;
+    cursor: pointer;
+}
+.threeDotButton{
+    background: #212121;
+    border-style: none;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    margin-left: 400px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.inSignUpButton{
+    background: #212121;
+    border-color: #3EA6FF;
+    height: 38px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #3EA6FF;
+    border-radius: 3px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.search-button:active,
+.voice-button:active,
+.hamburger:active{
+border-style: none;
+outline: none;
+}
+
+.personSignUp{
+    padding-right: 5px;
+}
+
+.sidenav {
+    margin-top: 50px;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #212121;
+    overflow-x: hidden;
+    transition: 0s;
+    padding-top: 30px;
+}
+  
+.sidenav a {
+    padding: 8px 8px 8px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0s;
+    margin-right: 20px;
+}
+
+  
+.sidenav a:hover {
+    background: #4D4D4D;
+}
+
+.sidenav a{
+    font-size: 18px;
+}
+  
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+  
+#main {
+    transition: margin-left 0s;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+#main a{
+    color: white;
+}
+  
+  
+  
+.sidebar {
+      margin-top: 50px;
+      height: 100%;
+      width: 92px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #212121;
+      overflow-x: hidden;
+      padding-top: 16px;
+      font-family: Roboto, Arial, sans-serif;
+      margin-left: -10px;
+}
+    
+    .sidebar a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 18px;
+        color: #818181;
+        display: block;
+}
+    
+.sidebar a:hover {
+        color: #f1f1f1;
+}
+    
+.main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        padding: 0px 10px;
+}
+    
+@media screen and (max-height: 450px) {
+      .sidenav {padding-top: 15px;}
+      .sidenav a {font-size: 18px;}
+  
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+}
+.navImg1{
+    width: 25px;
+    padding-right: 6px;
+}
+    .navImg{
+        width: 25px;
+        margin-right: 15px;
+    }
+
+    .infoSide .text{
+        font-size: 13px;
+        margin-top: -10px;
+    }
+
+    .infoSide{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    hr{
+        margin-right: 10px;
+        background-color: #4D4D4D;
+        height: 1px;
+        border: none;
+    }
+    
+    .insideNav{
+        color: white;
+        margin: 20px;
+    }
+    .signUpButton2{
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .inSignUpButton2{
+        padding: 10px;
+        margin-left: -60px;
+        background: #212121;
+        color: #3EA6FF;
+        border-color: #3EA6FF;
+        border-radius: 3px;
+    }
+        
+.explore{
+    color: #AAAAAA;
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.visibility{
+    padding-bottom: 100px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #212121;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #747474;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+    width: px;
+}
+
+.footerNav{
+    margin-left: 10px;
+    color: #AAAAAA;
+    cursor: pointer;
+}
+.copy{
+    color: #71706C;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.vidContent{
+    margin-left: 83px;
+}
+
+.chipContent{
+    background: #212121fa;
+    margin-left: -10px;
+    margin-top: 30px;
+    width: 100%;
+    padding: 12px;
+    border: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #4D4D4D;
+    position: fixed;
+}
+
+.chips{
+    display: inline-block;
+    font-size: 16px;
+    padding: 7px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-right: 10px;
+    border-radius: 25px;
+    background-color: #474747;
+}
+.chips a{
+    text-decoration: none;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.chips:hover{
+    background: #a1a1a1;
+}
+
+.chips .chipsToolTip{
+    visibility: hidden;
+    width: auto;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 5px 0;
+    padding-right: 8px;
+    padding-left: 8px;
+    margin-top: 25px;
+    margin-left: -20px;
+    position: absolute;
+    font-size: 15px;
+    z-index: 1;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.chips:hover .chipsToolTip{
+    visibility: visible;
+}
+
+.videoInside{
+    display: flex;
+    margin-left: 30px;
+}
+
+.inVideo{
+    display: flex;
+}
+
+.video1{
+    margin-left: 17px;
+    transition: transform .2s;
+    cursor: pointer;
+}
+
+.video1 img{
+    width: 350px;
+}
+
+.video2{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.video2 img{
+    width: 180px;
+}
+
+.contentInside{
+    padding-right: 13px;
+    display: flex;
+}
+
+.videoDivOne{
+    margin-top: 20px;
+    margin-left: 200px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.videoDivTwo{
+    margin-top: 55px;
+    margin-left: 200px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.videoDivThree{
+    margin-top: 55px;
+    margin-left: 120px;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.description{
+    display: flex;
+
+}
+
+.description img{
+    margin-top: 10px;
+    border-radius: 100%;
+    width: 37px;
+}
+
+.description h1{
+    color: white;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.inDesc h1{
+    color: white;
+    font-size: 16px;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.inDesc2{
+    margin-top: -20px;
+    margin-left: 50px;
+    font-size: 15px;
+    color: #A5A5A5;
+}
+
+.inDesc3{
+    margin-top: -20px;
+    margin-left: 10px;
+    font-size: 15px;
+    color: #A5A5A5;
+}
+  
+  .video1:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+    background: #212121;
+  }
+
+
+.videoDivOne{
+    padding-top: 100px;
+}
+
+.video1 .video1text {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    margin-left: 227px;
+    margin-top: -28px;
+    font-size: 10px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+
+  .video1:hover .video1text {
+    visibility: visible;
+  }
+
+.shortTag{
+    margin-left: 70px;
+    display: flex;
+    color: white;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.shortTag img{
+    width: 30px;
+    height: 30px;
+    padding-top: 15px;
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
